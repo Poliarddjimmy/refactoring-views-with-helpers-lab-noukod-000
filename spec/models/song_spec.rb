@@ -14,7 +14,7 @@ RSpec.describe Song, type: :model do
 
   it "can set the artist via name" do
     song = Song.new(title: "Mad World")
-    song.artist.name = "Tears for Fears"
+    song.artist_name = "Tears for Fears"
     song.save
     expect(song.artist.name).to eq "Tears for Fears"
     expect(song.artist.name).to eq "Tears for Fears"
