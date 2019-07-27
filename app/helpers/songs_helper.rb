@@ -1,5 +1,4 @@
 module SongsHelper
-  module SongsHelper
   def display_artist song
     if song.artist.present?
       link_to song.artist_name, song.artist
